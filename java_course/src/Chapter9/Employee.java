@@ -3,17 +3,22 @@ package Chapter9;
 public class Employee extends Person
 {
 
-    private String EmployeeId;
+    private String employeeId;
     private String title;
+
+    public Employee(){
+        super("Spencer");
+        System.out.println("In Employee default contrsuctor");
+    }
 
     public String getEmployeeId()
     {
-        return EmployeeId;
+        return employeeId;
     }
 
     public void setEmployeeId(String employeeId)
     {
-        EmployeeId = employeeId;
+        employeeId = employeeId;
     }
 
     public String getTitle()
