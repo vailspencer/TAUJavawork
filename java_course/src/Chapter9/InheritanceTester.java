@@ -5,11 +5,17 @@ public class InheritanceTester
   public static void main(String[] args)
   {
       //Employee employee = new Employee();
-      Rectangle rectangle = new Rectangle();
-      rectangle.print();
+      //Rectangle rectangle = new Rectangle();
+      //rectangle.print();
 
-      Square square = new Square();
-      square.print("square");
+      //Square square = new Square();
+      //square.print("square");
+
+      Mother mom = new Mother();
+      mom.setName("Denise");
+      mom.setAge(55);
+
+      System.out.println(mom.getName() + "is a " + mom.getGender() + " who is " + mom.getAge() + " years old");
   }
 
   public static void testSquareOverride(){
